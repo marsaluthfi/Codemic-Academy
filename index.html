@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f8fb" />
+    <title>Codemic Academy — Belajar, Berkarya, Bertumbuh</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="shell topbar">
+      <a class="brand" href="#gallery" aria-label="Codemic Academy, beranda">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>Code<span>mic</span> Academy</span>
+      </a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a class="nav-link active" href="#gallery" data-view="gallery"
+          >Gallery</a
+        >
+        <a class="nav-link" href="#pendaftaran" data-view="pendaftaran"
+          >Pendaftaran</a
+        >
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-label="Aktifkan mode terang"
+          title="Ganti tema"
+        >
+          <span class="theme-icon" aria-hidden="true">☼</span>
+          <span class="theme-label">Terang</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="view active" id="gallery" aria-labelledby="gallery-title">
+        <div class="shell">
+          <div class="hero-row">
+            <div>
+              <div class="eyebrow">Belajar bareng, tumbuh bareng</div>
+              <h1 id="gallery-title">
+                Ide hebat dimulai dari
+                <span class="accent">baris pertama.</span>
+              </h1>
+              <p class="intro">
+                Lihat keseruan perjalanan belajar di Codemic Academy. Dari rasa
+                penasaran pertama sampai karya digital yang siap dibagikan.
+              </p>
+            </div>
+            <div class="hero-tag"><b>●</b> Belajar dengan praktik langsung</div>
+          </div>
+
+          <div class="gallery-grid">
+            <article class="card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=85"
+                  alt="Peserta berdiskusi bersama di kelas"
+                  loading="lazy"
+                />
+                <span class="card-label">Kolaborasi</span>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span>01 / Kelas</span><span>Web dasar</span>
+                </div>
+                <h2>Belajar dalam tim</h2>
+                <p>
+                  Peserta bertukar ide, menyusun solusi, dan belajar memahami
+                  cara berpikir programmer bersama mentor.
+                </p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85"
+                  alt="Peserta fokus mengerjakan proyek di laptop"
+                  loading="lazy"
+                />
+                <span class="card-label">Project time</span>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span>02 / Praktik</span><span>UI &amp; coding</span>
+                </div>
+                <h2>Dari konsep jadi karya</h2>
+                <p>
+                  Setiap materi langsung dipraktikkan lewat proyek kecil agar
+                  konsep coding terasa nyata dan mudah diingat.
+                </p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=85"
+                  alt="Mentor mendampingi peserta dalam sesi pelatihan"
+                  loading="lazy"
+                />
+                <span class="card-label">Mentoring</span>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span>03 / Diskusi</span><span>Semua level</span>
+                </div>
+                <h2>Mentor selalu siap bantu</h2>
+                <p>
+                  Tanya jawab dan sesi review membantu peserta menemukan solusi
+                  sekaligus berani mencoba pendekatan baru.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="cta-band">
+            <div>
+              <h2>Siap mulai perjalanan coding-mu?</h2>
+              <p>
+                Pilih bahasa pemrograman yang ingin kamu pelajari dan bergabung
+                bersama kami.
+              </p>
+            </div>
+            <a class="button" href="#pendaftaran" data-go="pendaftaran"
+              >Daftar sekarang <span aria-hidden="true">→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="pendaftaran" aria-labelledby="register-title">
+        <div class="shell register-layout">
+          <div class="register-copy">
+            <div class="eyebrow">Langkah pertama dimulai di sini</div>
+            <h1 id="register-title">
+              Mari buat sesuatu yang <span class="accent">keren.</span>
+            </h1>
+            <p class="intro">
+              Isi data pendaftaran berikut. Tim Codemic akan membantu kamu
+              memulai belajar coding sesuai minatmu.
+            </p>
+            <ul class="feature-list">
+              <li><span class="check">✓</span> Materi ramah untuk pemula</li>
+              <li><span class="check">✓</span> Belajar lewat proyek nyata</li>
+              <li>
+                <span class="check">✓</span> Dibimbing mentor berpengalaman
+              </li>
+            </ul>
+          </div>
+
+          <div class="form-card">
+            <div class="form-heading">
+              <h2>Form pendaftaran</h2>
+              <p>Lengkapi informasi di bawah ini untuk mendaftar.</p>
+            </div>
+            <form id="registration-form">
+              <div class="field-grid">
+                <div class="field">
+                  <label for="nik">NIK <span class="required">*</span></label>
+                  <input
+                    class="control"
+                    type="text"
+                    id="nik"
+                    name="nik"
+                    placeholder="16 digit NIK"
+                    inputmode="numeric"
+                    pattern="[0-9]{16}"
+                    maxlength="16"
+                    title="NIK harus terdiri dari 16 digit angka"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="nama"
+                    >Nama lengkap <span class="required">*</span></label
+                  >
+                  <input
+                    class="control"
+                    type="text"
+                    id="nama"
+                    name="nama"
+                    placeholder="Nama sesuai identitas"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div class="field full">
+                  <span class="group-label"
+                    >Jenis kelamin <span class="required">*</span></span
+                  >
+                  <div class="radio-row">
+                    <label class="radio-option"
+                      ><input
+                        type="radio"
+                        name="gender"
+                        value="Laki-laki"
+                        required
+                      />
+                      Laki-laki</label
+                    >
+                    <label class="radio-option"
+                      ><input type="radio" name="gender" value="Perempuan" />
+                      Perempuan</label
+                    >
+                  </div>
+                </div>
+                <div class="field full">
+                  <label for="hp">No. HP <span class="required">*</span></label>
+                  <input
+                    class="control"
+                    type="tel"
+                    id="hp"
+                    name="hp"
+                    placeholder="Contoh: 081234567890"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    required
+                  />
+                </div>
+                <div class="field full">
+                  <label for="alamat"
+                    >Alamat <span class="required">*</span></label
+                  >
+                  <textarea
+                    class="control"
+                    id="alamat"
+                    name="alamat"
+                    placeholder="Nama jalan, kota, dan kode pos"
+                    autocomplete="street-address"
+                    required
+                  ></textarea>
+                </div>
+                <div class="field full">
+                  <label for="bahasa"
+                    >Bahasa pemrograman yang diminati
+                    <span class="required">*</span></label
+                  >
+                  <select class="control" id="bahasa" name="bahasa" required>
+                    <option value="" disabled selected>
+                      Pilih bahasa pemrograman
+                    </option>
+                    <option>HTML &amp; CSS</option>
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>PHP</option>
+                    <option>C++</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button class="button" type="submit">
+                  Simpan pendaftaran <span aria-hidden="true">→</span>
+                </button>
+                <button class="button secondary" type="reset">
+                  Reset form
+                </button>
+              </div>
+            </form>
+            <section
+              class="result"
+              id="result"
+              aria-live="polite"
+              aria-labelledby="result-title"
+            >
+              <h3 id="result-title">✓ Pendaftaran berhasil disimpan</h3>
+              <div class="result-grid" id="result-content"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell">
+        <span>© 2025 Codemic Academy</span
+        ><span>Belajar hari ini, bangun masa depan digital.</span>
+      </div>
+    </footer>
+
+    <script>
+      const navLinks = document.querySelectorAll("[data-view]");
+      const views = document.querySelectorAll(".view");
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeMeta = document.querySelector('meta[name="theme-color"]');
+      const savedTheme =
+        localStorage.getItem("codemic-theme") ||
+        localStorage.getItem("codespace-theme");
+
+      function setTheme(theme) {
+        const isLight = theme === "light";
+        document.documentElement.dataset.theme = isLight ? "light" : "dark";
+        themeToggle.querySelector(".theme-icon").textContent = isLight
+          ? "☾"
+          : "☼";
+        themeToggle.querySelector(".theme-label").textContent = isLight
+          ? "Gelap"
+          : "Terang";
+        themeToggle.setAttribute(
+          "aria-label",
+          isLight ? "Aktifkan mode gelap" : "Aktifkan mode terang",
+        );
+        themeMeta.setAttribute("content", isLight ? "#f4f8fb" : "#142330");
+        localStorage.setItem("codemic-theme", isLight ? "light" : "dark");
+      }
+
+      setTheme(savedTheme === "dark" ? "dark" : "light");
+      themeToggle.addEventListener("click", () => {
+        setTheme(
+          document.documentElement.dataset.theme === "light" ? "dark" : "light",
+        );
+      });
+
+      function showView(viewName) {
+        views.forEach((view) =>
+          view.classList.toggle("active", view.id === viewName),
+        );
+        navLinks.forEach((link) => {
+          const active = link.dataset.view === viewName;
+          link.classList.toggle("active", active);
+          if (active) link.setAttribute("aria-current", "page");
+          else link.removeAttribute("aria-current");
+        });
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      navLinks.forEach((link) =>
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          showView(link.dataset.view);
+          history.replaceState(null, "", "#" + link.dataset.view);
+        }),
+      );
+      document.querySelectorAll("[data-go]").forEach((link) =>
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          showView(link.dataset.go);
+          history.replaceState(null, "", "#" + link.dataset.go);
+        }),
+      );
+
+      const form = document.getElementById("registration-form");
+      const result = document.getElementById("result");
+      const resultContent = document.getElementById("result-content");
+      const fields = [
+        ["NIK", "nik"],
+        ["Nama lengkap", "nama"],
+        ["Jenis kelamin", "gender"],
+        ["No. HP", "hp"],
+        ["Alamat", "alamat"],
+        ["Bahasa diminati", "bahasa"],
+      ];
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+        if (!window.confirm("Apakah Anda sudah yakin untuk menyimpan?")) return;
+
+        const formData = new FormData(form);
+        resultContent.replaceChildren();
+        fields.forEach(([label, name]) => {
+          const item = document.createElement("div");
+          item.className = "result-item" + (name === "alamat" ? " wide" : "");
+          const caption = document.createElement("small");
+          caption.textContent = label;
+          const value = document.createElement("strong");
+          value.textContent = formData.get(name);
+          item.append(caption, value);
+          resultContent.append(item);
+        });
+        result.classList.add("visible");
+        result.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      });
+
+      form.addEventListener("reset", () => {
+        result.classList.remove("visible");
+        resultContent.replaceChildren();
+      });
+
+      if (window.location.hash === "#pendaftaran") showView("pendaftaran");
+    </script>
+  </body>
+</html>
