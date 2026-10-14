@@ -284,9 +284,7 @@
       const views = document.querySelectorAll(".view");
       const themeToggle = document.getElementById("theme-toggle");
       const themeMeta = document.querySelector('meta[name="theme-color"]');
-      const savedTheme =
-        localStorage.getItem("codemic-theme") ||
-        localStorage.getItem("codespace-theme");
+      const savedTheme = localStorage.getItem("codemic-theme");
 
       function setTheme(theme) {
         const isLight = theme === "light";
