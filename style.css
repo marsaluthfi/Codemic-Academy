@@ -523,7 +523,7 @@ h1 .accent {
 }
 .form-heading p {
   margin: 0;
-  color: var(--storm-soft);
+  color: #000000;
   font-size: 0.82rem;
 }
 .field-grid {
